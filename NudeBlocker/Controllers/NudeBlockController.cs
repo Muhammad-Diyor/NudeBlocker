@@ -17,7 +17,7 @@ public class NudeBlockerController : ControllerBase
     [HttpPost]
     [ProducesResponseType(StatusCodes.Status400BadRequest)]
     [ProducesResponseType(StatusCodes.Status200OK)]
-    public async Task<IActionResult> RegisterUser(IFormFile photo)
+    public async Task<IActionResult> CheckPhoto(IFormFile photo)
     {
         // check if photo is null or empty
         if (photo == null || photo.Length == 0)
